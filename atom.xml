@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.danmo.ml</id>
+    <title>淡墨博客</title>
+    <updated>2022-11-27T00:59:41.055Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.danmo.ml"/>
+    <link rel="self" href="https://blog.danmo.ml/atom.xml"/>
+    <subtitle>我曾踏入山巅，也曾陷入低谷，二者都让我受益良多！</subtitle>
+    <logo>https://blog.danmo.ml/images/avatar.png</logo>
+    <icon>https://blog.danmo.ml/favicon.ico</icon>
+    <rights>All rights reserved 2022, 淡墨博客</rights>
+    <entry>
+        <title type="html"><![CDATA[需求：输出九九乘法表。]]></title>
+        <id>https://blog.danmo.ml/xu-qiu-shu-chu-jiu-jiu-cheng-fa-biao/</id>
+        <link href="https://blog.danmo.ml/xu-qiu-shu-chu-jiu-jiu-cheng-fa-biao/">
+        </link>
+        <updated>2022-11-26T14:15:15.000Z</updated>
+        <content type="html"><![CDATA[<p>代码如下:</p>
+<pre><code>#include&quot;stdio.h&quot;
+main()
+{
+	int i,j;
+	for(i=1;i&lt;10;i++)
+	{
+	for(j=1;j&lt;=i;j++)
+	{
+	printf(&quot;%d*%d=%d\t&quot;,j,i,i*j);
+	}
+	printf(&quot;\n&quot;);
+}
+
+	return 0;	
+}
+
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[需求:0~9之间可以组成多少不重复的三位数.]]></title>
+        <id>https://blog.danmo.ml/xu-qiu-0~9-zhi-jian-ke-yi-zu-cheng-duo-shao-bu-chong-fu-de-san-wei-shu/</id>
+        <link href="https://blog.danmo.ml/xu-qiu-0~9-zhi-jian-ke-yi-zu-cheng-duo-shao-bu-chong-fu-de-san-wei-shu/">
+        </link>
+        <updated>2022-11-26T13:39:13.000Z</updated>
+        <content type="html"><![CDATA[<p>代码如下:</p>
+<pre><code>#include&quot;stdio.h&quot;
+main()
+{
+	int number,number1,number2,sum,l=0;
+	for(number=1;number&lt;10;number++)
+		for(number1=0;number1&lt;10;number1++)
+		for(number2=0;number2&lt;10;number2++)
+	{
+		sum=number*100+number1*10+number2;
+		if(sum%100/10!=sum/100&amp;&amp;sum%100/10!=sum%10&amp;&amp;sum/100!=sum%10)
+	{
+		printf(&quot;%d &quot;,sum);
+		l++;
+		if(l!=0)
+		if(l%20==0)
+		printf(&quot;\n&quot;);
+	}
+	}
+		return 0;
+}</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[需求:求100之内自然数中最大的能被17整除的数。]]></title>
+        <id>https://blog.danmo.ml/xu-qiu-qiu-100-zhi-nei-zi-ran-shu-zhong-zui-da-de-neng-bei-17-zheng-chu-de-shu/</id>
+        <link href="https://blog.danmo.ml/xu-qiu-qiu-100-zhi-nei-zi-ran-shu-zhong-zui-da-de-neng-bei-17-zheng-chu-de-shu/">
+        </link>
+        <updated>2022-11-26T08:59:51.000Z</updated>
+        <content type="html"><![CDATA[<p>代码如下:</p>
+<pre><code>#include&quot;stdio.h&quot;
+main()
+{
+	int i;
+	for(i=100;i&gt;0;i--)
+	if(i%17==0)
+{
+	printf(&quot;The largest number divisible by 17 is:%d\n&quot;,i);
+	break;
+}
+return 0;
+}</code></pre>
+]]></content>
+    </entry>
+</feed>

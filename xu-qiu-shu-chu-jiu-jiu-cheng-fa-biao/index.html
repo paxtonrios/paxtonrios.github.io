@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>需求：输出九九乘法表。 | 淡墨博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://blog.danmo.ml/favicon.ico?v=1669510664675">
+<link rel="stylesheet" href="https://blog.danmo.ml/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="代码如下:
+#include&quot;stdio.h&quot;
+main()
+{
+	int i,j;
+	for(i=1;i&lt;10;i++)
+	{
+	for(j=1;j&lt;=i;j++)
+	{
+	printf(&quot;%d*..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://blog.danmo.ml">
+        <img src="https://blog.danmo.ml/images/avatar.png?v=1669510664675" class="site-logo">
+        <h1 class="site-title">淡墨博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://danmo.ml" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我曾踏入山巅，也曾陷入低谷，二者都让我受益良多！
+    </div>
+    <div class="site-footer">
+      Powered by <a href="http://danmo.ml" target="_blank">淡墨博客</a> | <a class="rss" href="https://blog.danmo.ml/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">需求：输出九九乘法表。</h2>
+            <div class="post-date">2022-11-26</div>
+            
+            <div class="post-content" v-pre>
+              <p>代码如下:</p>
+<pre><code>#include&quot;stdio.h&quot;
+main()
+{
+	int i,j;
+	for(i=1;i&lt;10;i++)
+	{
+	for(j=1;j&lt;=i;j++)
+	{
+	printf(&quot;%d*%d=%d\t&quot;,j,i,i*j);
+	}
+	printf(&quot;\n&quot;);
+}
+
+	return 0;	
+}
+
+</code></pre>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://blog.danmo.ml/xu-qiu-0~9-zhi-jian-ke-yi-zu-cheng-duo-shao-bu-chong-fu-de-san-wei-shu/">
+                  <h3 class="post-title">
+                    需求:0~9之间可以组成多少不重复的三位数.
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
